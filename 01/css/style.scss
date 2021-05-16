@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// rwd breakpoint
+$md: 768px;
+
+// header
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @media (max-width: $md) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 15px 0px;
+}
+
+.logo {
+    background-image: url("../images/M1.png");
+    height: 250px;
+    width: 250px;
+    position: relative;
+    @media (max-width: $md) {
+        background-image: url("../images/M2.png");
+        height: 150px;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $md) {
+        flex-wrap: wrap;
+    }
+    li {
+        @media (max-width: $md) {
+            width: 50%;
+            margin: 0 auto 10px;
+        }
+    }
+
+    li a {
+        color: #fff;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        background-color: #3399ff;
+        text-align: center;
+        &:hover {
+            background-color: orange;
+        }
+    }
+}
+
+// main
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid #000;
+    @media (max-width: $md) {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+    p {
+        margin-bottom: 24px;
+        line-height: 1.5;
+    }
+}
+
+.sidebar {
+    width: 20%;
+    padding: 5px;
+    border: 2px solid #000;
+    @media (max-width: $md) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+// footer
+.footer {
+    padding: 8px 0;
+    text-align: center;
+}

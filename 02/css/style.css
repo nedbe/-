@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.header_bg {
+  padding: 18px 16px;
+  background-color: #343a40;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar a strong {
+  margin-left: 8px;
+}
+
+.jumbotron {
+  max-width: 51%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.jumbotron p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 16px;
+  line-height: 1.5em;
+  color: #6c757d;
+}
+
+.jumbotron_btn a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.jumbotron_btn .main_btn {
+  background-color: #007bff;
+}
+
+.jumbotron_btn .secondary_btn {
+  background-color: #6c757d;
+}
+
+.picture_bg {
+  background-color: #f8f9fa;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.picture .card {
+  max-width: 30.7%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.picture .card .card_border {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.picture .card .card_border .thumbnail {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+.picture .card .card_border .card_body {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.picture .card .card_border .card_body .card-text {
+  margin-bottom: 16px;
+}
+
+.picture .card .card_border .card_body .card_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.picture .card .card_border .card_body .card_footer .card_btn_group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.picture .card .card_border .card_body .card_footer .card_btn_group button {
+  font-size: 14px;
+  padding: 8px;
+  margin: 0;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #6c757d;
+}
+
+.picture .card .card_border .card_body .card_footer .card_btn_group button:hover {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.picture .card .card_border .card_body .card_footer .card_btn_group .view_btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.picture .card .card_border .card_body .card_footer .card_btn_group .edit_btn {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.picture .card .card_border .card_body .card_footer small {
+  font-size: 12.8px;
+  color: #6c757d;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer .footer_conent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 15px;
+}
+
+footer p {
+  color: #6c757d;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
